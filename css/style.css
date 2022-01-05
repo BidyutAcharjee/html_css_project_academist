@@ -1,0 +1,900 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+	
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+}
+
+.section-padding{
+	padding-top: 120px;
+}
+	
+.container-full{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	}
+	
+.container-full:before,
+.container-full:after{
+	content: "";
+	display: table;
+	clear:both;
+}
+	
+.container{
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0 15px;
+	}
+	
+.container:before,
+.container:after{
+	content: "";
+	display: table;
+	clear:both;
+}
+
+.col-50{
+	width: 50%;
+	padding: 0 15px;
+	float:left;
+}
+
+.col-33{
+	width: 33.33%;
+	padding: 0 15px;
+	float:left;
+}
+
+.col-25{
+	width: 25%;
+	padding: 0 15px;
+	float:left;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Open+Sans&family=Poppins:ital@1&display=swap');
+
+/*======Site CSS=====*/
+
+
+/*
+font-family: 'Heebo', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+.col-70{
+	width: 70%;
+	margin-top: 5px;
+	float:left;
+}
+
+.col-30{
+	width: 30%;
+	padding: 0 15px;
+	float:left;
+}
+
+/*=====top header css start =====*/
+.top-header{
+	width: 100vw;
+	background: #1D1D1D;
+	padding: 13px 0px;
+
+}
+
+.top-header ul{
+	list-style: none;
+	display: inline-block;
+}
+
+.social li{
+	display: inline-block;
+	color: #6b6b6b;
+	text-decoration: none;
+	margin-left: 15px;
+}
+
+.social li a{
+	color: #6b6b6b;
+}
+
+.top-header a:hover{
+	color: #ff1949;
+}
+
+.phone{
+	color: #6b6b6b;
+	margin-right: 15px;
+}
+
+.login-register{
+	float: right;
+}
+
+.login-register a{
+	color: #fff;
+	margin-left: 15px;
+	font-weight: 100px;
+}
+/*===== top header css end =====*/
+
+
+/*===== Header css start =====*/
+
+.col-30 img {
+	height: 30px;
+    width: 170px;
+	margin: 25px 0;
+}
+
+
+.main-menu {
+	list-style-type: none;
+	margin-left: 46px;
+}
+
+.main-menu li{
+	float: left;
+	margin: 25px 0;
+}
+
+.main-menu li a{
+	font-size: 17px;
+	text-transform: capitalize;
+	color: #252525;
+	font-weight: 600;
+	margin: 2px;
+	padding: 7px 12px;
+	position: relative;
+	}
+
+.main-menu li a::before{
+	content: "";
+	height: 3px;
+	background-color: #ff1949;
+	position: absolute;
+	width: 0;
+	bottom: -3px;
+	display: inline-block;
+	transition: .5s;
+}
+
+
+.main-menu li a:hover::before{
+	width: 80%;
+}
+
+.main-btn-active{
+	border-bottom: 3px solid #ff1949;
+	
+}
+
+/*===== Header css end =====*/
+
+
+/*===== Home css start =====*/
+ .home{
+	background-image: url("../img/slider/slider1.jpg");
+	background-size: cover;
+	padding: 150px 0px;
+	
+ }
+ 
+ .home h1{
+	font-size: 92px;
+	color: #fff;
+	font-weight: 700;
+ }
+ 
+  .home p{
+	font-size: 19px;
+	color: #fff;
+	font-weight: 300;
+	line-height: 30px;
+	margin-bottom: 20px;
+ }
+ 
+
+
+ .btn{
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 34px;
+	color: #fff;
+	border: 2px solid #fff;
+	margin-right: 20px;
+	padding: 15px 30px;
+	text-transform: capitalize;
+	border-radius: 25px;	
+ }
+ 
+   .btn-active {
+	background-color: #FE0303;
+	border: 2px solid #fe0303;
+ }
+ 
+ .btn i{
+	 visibility: hidden;
+	transition: 3s;
+ }
+ 
+ .btn:hover i{
+	visibility: visible;
+	color: yellow;
+	font-size: 25px;
+ }
+ 
+/*===== Home css end =====*/
+
+
+/*===== courses css start =====*/
+
+/*===menu===*/
+
+.course-menu{
+	list-style-type: none;
+	display: flex;
+	padding-bottom: 25px;
+}
+
+.course-menu li{
+	float: left;
+	margin: 4px;
+}
+
+.course-menu li a{
+	color: #252525;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 24px;
+	padding: 5px 10px 5px 0;
+	position: relative;
+	}
+	
+.course-menu li a::before{
+	font-family: "Font Awesome 5 Free";
+	content: "\f30b";
+	position: absolute;
+	color: #ff1949;
+	left: -16px;
+	bottom: 1px;
+	visibility: hidden;
+	transition: .3s;
+}
+
+
+.course-menu li a:hover::before{
+	visibility: visible;
+}
+
+
+/* ****courses home section**** */
+
+.course-img{
+	width: 100%;
+	height: 230px;
+	position: relative;
+	overflow: hidden;
+}
+
+.course-img img{
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+
+.crs-cat{
+	position: absolute;
+	text-transform: capitalize;
+	bottom: 25px;
+	right: 0;
+	background-color: #ff1949;
+	color: #ffffff;
+	padding: 10px 25px;
+	letter-spacing: 1px;
+	font-size: 13px;
+}
+
+.crs-cat:hover{
+	background-color: #252525;
+}
+
+.course-box:hover img{
+	transform: scale(1.1);
+}
+
+.course-heading h3 a{
+	font-size: 19px;
+	color: #252525;
+	text-transform: capitalize;
+	font-weight: 900;
+	line-height: 15px;
+	display: inline-block;
+	margin: 25px 0 10px 0;
+	
+}
+
+.instractor{
+	color: #252525;
+	font-size: 15px;
+	letter-spacing: 1px;
+	padding-bottom: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.instractor:before{
+	content: " ";
+	height: 3px;
+	width: 40px;
+	position: absolute;
+	background-color: #ff1949;
+	bottom: 7px;
+	transition: 0.5s;
+}
+
+.course-box:hover .instractor:before{
+	width: 70px;
+}
+
+.course-heading p{
+	color: #444444;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.courses-footer{
+	font-size: 13px;
+	padding-top: 20px;
+}
+
+.courses-footer a{
+	text-transform: capitalize;
+	color: #252525;
+}
+
+.courses-footer i{
+	margin-right: 5px;	
+}
+
+.ratings{
+	margin-left: 20px;
+}
+
+.fee{
+	float: right;
+	color: #ff1949 !important;
+	font-size: 19px;
+	font-weight: 600;
+}
+
+/*===== courses css end =====*/
+
+
+/*===== courses digital box css start =====*/
+.four-box{
+	display: grid;
+	grid-template-columns: auto auto;
+	width: 100%;
+	height: 950px;
+}
+
+.four-box img{
+	width: 100%;
+	height: 415px;
+}
+
+.box{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	
+}
+
+.left-top{
+	background-color: #ff1949;
+	
+	
+}
+
+.left-top h2{
+	display: inline-block;
+	padding: 140px 90px 40px 120px;
+	color: white;
+	font-size: 45px;
+}
+
+.left-top a{
+	display: inline-block;
+	padding: 0 0 50px 120px;
+	color: white;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 600;
+	letter-spacing: 1px
+	position: relative;
+}
+
+.left-top a::before{
+	content: "";
+	position: absolute;
+	border-bottom: 1px solid;
+	border-color: inherit;
+	width: 82px;
+	display: inline-block;
+	bottom: -1100px;
+	transition: .3s;
+}
+
+.left-top a:hover::before{
+	border-color: #ff1949;
+}
+
+.right-btm h2{
+	display: inline-block;
+	padding: 140px 90px 40px 120px;
+	color: #252525;
+	font-size: 45px;
+}
+
+.right-btm a{
+	display: inline-block;
+	padding: 0 0 50px 120px;
+	color: #444444;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 600;
+	letter-spacing: 1px
+}
+
+.right-btm a::before{
+	content: "";
+	position: absolute;
+	border-bottom: 1px solid;
+	color: #444444;
+	width: 82px;
+	display: inline-block;
+	bottom: -1515px;
+	transition: .3s;
+}
+
+.right-btm a:hover::before{
+	border-color: white;
+}
+
+
+/*===== courses digital box css end =====*/
+
+
+/*===== Teachers box css starts =====*/
+
+.teachers h3{
+	color: #252525;
+	font-size: 43px;
+	font-weight: 900;
+	line-height: 50px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.teachers h3:before{
+	position: absolute;
+	content: "";
+	border-bottom: 2px solid #ff1949;
+	width: 40px;
+	top: 75px;
+}
+
+.teachers p{
+	color: #444444;
+	font-size: 19px;
+	line-height: 28px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	margin-bottom: 75px;
+}
+
+.teachers-box{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.teachers-box img{
+	width: 100%;
+	height: auto;
+}
+
+.teachers-box .box-left{
+	width: 140px;
+	height: 140px;
+}
+
+.teachers-box .box-right{
+	padding: 35px  10px 35px 35px;
+}
+
+.teachers-box .box-right h4 a{
+	font-size: 19px;
+	line-height: 30px;
+	color: #252525;
+	text-transform: capitalize;
+	font-weight: 900;
+}
+
+.teachers-box .box-right h4 a:hover{
+	color: #ff1949;
+}
+
+.teachers-box .box-right span{
+	font-size: 15px;
+	line-height: 30px;
+	color: #252525;
+	text-transform: capitalize;
+	font-weight: 200;
+}
+
+.teachers-box .box-right ul{
+	list-style: none;
+}
+
+.teachers-box .box-right li{
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.teachers-box .box-right li a{
+	font-size: 15px;
+	color: #444444;
+}
+
+
+/*===== Teachers box css end =====*/
+
+
+/*===== Review box css start =====*/
+.review{
+	background-image: url(../img/review/slider.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 100px 0;
+	margin-top: 100px;
+}
+
+.review-cnt{
+	display: flex;
+	
+}
+
+.rev-txt{
+	margin-left: 25px;
+}
+
+.rev-txt h3{
+	font-size: 45px;
+	line-height: 54.5px;
+	color: #ffffff;
+	
+}
+
+.rev-txt h4{
+	font-size: 19px;
+	line-height: 26.6px;
+	color: #ffffff;
+	font-weight: 300;
+	margin-top: 20px;
+	
+}
+
+.rev-txt span{
+	font-size: 40px;
+	line-height: 54.5px;
+	color: #ffffff;
+	font-weight: 100;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+/*===== Review box css end =====*/
+
+
+/*=====  video tour box css start =====*/
+.tour{
+	padding: 120px 0;
+}
+
+.tour-txt h3{
+	font-size: 45px;
+	line-height: 54px;
+	color: #252525;
+	font-weight: 700;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.tour-txt h3:before{
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 40px;
+	background-color: #ff1949;
+	top: 70px;
+	left: 0;
+}
+
+.tour-txt  p{
+	font-size: 19px;
+	line-height: 28.5px;
+	color: #333333;
+	font-weight: 300;
+	
+}
+
+
+.tour-list p{
+	font-size: 15px;
+	line-height: 24px;
+	color: #444444;
+	font-weight: 300;
+}
+
+.tour-list{
+	margin-top: 30px;
+}
+
+.tour-list p i{
+	color: #FF1949;
+	margin-right: 20px;
+}
+
+/*=====  video tour box css end =====*/
+
+
+/*=====  client box css start =====*/
+
+.client{
+	background: url(../img/client/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 80px 0;
+	
+}
+
+.client-cont{
+	display: flex;
+	
+}
+
+.client-cont img{
+	color: #444;
+}
+
+.client-cont img:hover{
+	color: #ff1949;
+}
+
+/*=====  client box css end =====*/
+
+/*=====  Form box css start =====*/
+.form{
+	padding: 140px 0;
+	background: url(../img/background-form.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.form .col-50{
+	padding: 0;
+}
+
+.form-left{
+	background-color: #FF1949;
+	position: relative;
+}
+
+.form-left:before{
+	content: "\f0d9";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #fff;
+	font-size: 50px;
+	top: 180px;
+	right: -2px;
+	position: absolute;
+}
+
+
+.form-left h3{
+	font-size: 45px;
+	line-height: 54px;
+	font-weight: 900;
+	color: #ffffff;
+	padding: 100px 40px;
+	
+}
+
+.form-right{
+	padding: 60px;
+	background: url(../img/Form-background.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.form-right h3{
+	font-size: 28px;
+	line-height: 34px;
+	color: #252525;
+}
+
+.form-right input{
+	display: block;
+	width: 100%;
+	padding: 15px;
+	border: none;
+	border-bottom: 1px solid #e1e1e1;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+.form-right input[type=submit]{
+	display: block;
+	width: 150px;
+	padding: 15px 31px;
+	border: none;
+	background-color: #252525;
+	color: #fff;
+	font-size: 15px;
+	margin-top: 22px;
+	font-size: 17px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.form-right input[type=submit]:hover{
+	background-color: #ff1949;
+	
+}
+/*=====  Form box css end =====*/
+
+/*=====  Footer box css start =====*/
+.footer{
+	background-color: #252525;
+	color: #fff;
+	padding: 120px 0;
+}
+
+.footer-cont h5{
+	font-size: 20px;
+	line-height: 28px;
+	color: #fff;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.footer-cont p{
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff;
+	font-weight: 200;
+	margin-bottom: 30px;
+}
+
+.footer-cont ul{
+	list-style-type: none;
+}
+
+.footer-cont ul li{
+	margin-bottom: 25px;
+}
+
+.footer-cont ul li a{
+	color: #fff;
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 200;
+	
+}
+
+.footer-cont ul li a i{
+	margin-right: 15px;
+	
+}
+
+.footer-cont h6 a{
+	font-size: 16px;
+	line-height: 22px;
+	color: #fff;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.footer-cont h6 a:hover{
+	color: #ff1949;
+	
+}
+
+.footer-cont span{
+	
+	margin-bottom: 20px;
+	display: block;
+}
+
+.footer-cont span a{
+	font-size: 15px;
+	line-height: 22px;
+	color: #fff;
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+
+.footer-cont span a:hover{
+	color: #ff1949;
+	text-decoration: underline;
+	
+}
+
+.footer-cont img{
+	width: 100%;
+	height: auto;
+}
+
+
+/*=====  Footer box css end =====*/
+
+/*=====end footer css start =====*/
+.end-footer{
+	width: 100vw;
+	background: #1D1D1D;
+	padding: 30px 0 50px 0px;
+
+}
+
+.end-footer ul{
+	list-style: none;
+	display: inline-block;
+	float: right;
+}
+
+.end-footer .phone{
+	margin-left: 120px;
+}
+
+
+
+.end-footer a:hover{
+	color: #ff1949;
+}
+
+.end-footer span{
+	color: #fff;
+}
+
+
+
+/*===== top header css end =====*/
+
+
+
+
+
+
+
+
+
+
+
